@@ -1,0 +1,4 @@
+INSERT INTO clientes(id, des_nom, descrip, tipo, serial, num_int, peso, ancho, largo, val_com, fec_baj, fec_com, est_act, color, asigna) VALUES(1,'JSON','JSON','AS',1232,1234,2,2,23,82,'2018-03-03','2018-03-03','ROJO','ROJO','BOGOTA');
+INSERT INTO clientes(id, des_nom, descrip, tipo, serial, num_int, peso, ancho, largo, val_com, fec_baj, fec_com, est_act, color, asigna) VALUES(2,'JSON','JSON','AS',1232,1234,2,2,23,82,'2018-03-03','2018-03-03','ROJO','ROJO','BOGOTA');
+INSERT INTO clientes(id, des_nom, descrip, tipo, serial, num_int, peso, ancho, largo, val_com, fec_baj, fec_com, est_act, color, asigna) VALUES(3,'JSON','JSON','AS',1232,1234,2,2,23,82,'2018-03-03','2018-03-03','ROJO','ROJO','BOGOTA');
+INSERT INTO clientes(id, des_nom, descrip, tipo, serial, num_int, peso, ancho, largo, val_com, fec_baj, fec_com, est_act, color, asigna) VALUES(4,'JSON','JSON','AS',1232,1234,2,2,23,82,'2018-03-03','2018-03-03','ROJO','ROJO','BOGOTA');
