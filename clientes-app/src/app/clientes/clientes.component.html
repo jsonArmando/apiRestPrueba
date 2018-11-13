@@ -1,0 +1,56 @@
+<div class="card border-primary mb-3" style="font-size:12px;">
+  <div class="card-header">Clientes</div>
+  <div class="card-body text-primary">
+    <h5 class="card-title">Listado de Activos Fijos</h5>
+
+<div class="my-2 text-left">
+<button class="btn btn-rounded btn-primary" type="button" [routerLink]="['/clientes/form']">Crear Activo Fijos</button>
+</div>
+
+    <table class="table table-bordered table-striped">
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>Nombre</th>
+          <th>Descripción</th>
+          <th>Tipo</th>
+          <th>Serial</th>
+          <th>#</th>
+          <th>Peso</th>
+          <th>Ancho</th>
+          <th>Largo</th>
+          <th>Valor</th>
+          <th>Compra</th>
+          <th>Baja</th>
+          <th>Estado</th>
+          <th>Color</th>
+          <th>Asignar</th>
+          <th>Editar</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let cliente of clientes">
+          <td>{{ cliente.id }}</td>
+          <td>{{ cliente.desNom }}</td>
+          <td>{{ cliente.descrip }}</td>
+          <td>{{ cliente.tipo }}</td>
+          <td>{{ cliente.numInt }}</td>
+          <td>{{ cliente.serial }}</td>
+          <td>{{ cliente.peso }}</td>
+          <td>{{ cliente.ancho }}</td>
+          <td>{{ cliente.largo }}</td>
+          <td>{{ cliente.valCom }}</td>
+          <td>{{ cliente.fecCom }}</td>
+          <td>{{ cliente.fecBaj }}</td>
+          <td>{{ cliente.estAct }}</td>
+          <td>{{ cliente.color }}</td>
+          <td>{{ cliente.asigna }}</td>
+          <td>
+            <button type="button" name="editar" [routerLink]="['/clientes/form', cliente.id]" class="btn btn-primary btn-sm">editar</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+</div>

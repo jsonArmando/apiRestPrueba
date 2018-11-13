@@ -1,0 +1,123 @@
+<div class="card bg-dark text-white" style="font-size:12px;">
+  <div class="card-header">{{ titulo }}</div>
+  <div class="card-body">
+    <form>
+      <div class="form-group row">
+        <label for="desNom" class="col-form-label col-sm-2">Nombre</label>
+        <div class="col-sm-6">
+          <input type="text" class="form-control" [(ngModel)]="cliente.desNom" name="desNom">
+        </div>
+      </div>
+
+      <!-- -->
+      <div class="form-group row">
+        <label for="descrip" class="col-form-label col-sm-2">Descripción</label>
+        <div class="col-sm-6">
+          <input type="text" class="form-control" [(ngModel)]="cliente.descrip" name="descrip">
+        </div>
+      </div>
+      <!-- -->
+      <div class="form-group row">
+        <label for="tipo" class="col-form-label col-sm-2">Tipo</label>
+        <div class="col-sm-6">
+          <input type="text" class="form-control" [(ngModel)]="cliente.tipo" name="tipo">
+        </div>
+      </div>
+      <!-- -->
+      <div class="form-group row">
+        <label for="numInt" class="col-form-label col-sm-2">Número Interno</label>
+        <div class="col-sm-6">
+          <input type="text" class="form-control" [(ngModel)]="cliente.numInt" name="numInt">
+        </div>
+      </div>
+
+      <!-- -->
+      <div class="form-group row">
+        <label for="peso" class="col-form-label col-sm-2">Peso</label>
+        <div class="col-sm-6">
+          <input type="text" class="form-control" [(ngModel)]="cliente.peso" name="peso">
+        </div>
+      </div>
+
+      <!-- -->
+      <div class="form-group row">
+        <label for="serial" class="col-form-label col-sm-2">Serial</label>
+        <div class="col-sm-6">
+          <input type="text" class="form-control" [(ngModel)]="cliente.serial" name="serial">
+        </div>
+      </div>
+
+      <!-- -->
+      <div class="form-group row">
+        <label for="ancho" class="col-form-label col-sm-2">Ancho</label>
+        <div class="col-sm-6">
+          <input type="text" class="form-control" [(ngModel)]="cliente.ancho" name="ancho">
+        </div>
+      </div>
+
+      <!-- -->
+      <div class="form-group row">
+        <label for="largo" class="col-form-label col-sm-2">Largo</label>
+        <div class="col-sm-6">
+          <input type="text" class="form-control" [(ngModel)]="cliente.largo" name="largo">
+        </div>
+      </div>
+
+
+      <div class="form-group row">
+        <label for="valCom" class="col-form-label col-sm-2">Valor Compra</label>
+        <div class="col-sm-6">
+          <input type="text" class="form-control" [(ngModel)]="cliente.valCom" name="valCom">
+        </div>
+      </div>
+<!--
+      <div class="form-group row">
+        <label for="fecCom" class="col-form-label col-sm-2">Fecha Compra</label>
+        <div class="col-sm-6">
+          <input type="text" class="form-control" [(ngModel)]="cliente.fecCom" name="fecCom">
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label for="fecBaj" class="col-form-label col-sm-2">Fecha Baja</label>
+        <div class="col-sm-6">
+          <input type="text" class="form-control" [(ngModel)]="cliente.fecBaj" name="fecBaj">
+        </div>
+      </div>
+
+      <!-- -->
+      <div class="form-group row">
+        <label for="estAct" class="col-form-label col-sm-2">Estado Activo</label>
+        <div class="col-sm-6">
+          <input type="text" class="form-control" [(ngModel)]="cliente.estAct" name="estAct">
+        </div>
+      </div>
+
+      <!-- -->
+      <div class="form-group row">
+        <label for="color" class="col-form-label col-sm-2">Color</label>
+        <div class="col-sm-6">
+          <input type="text" class="form-control" [(ngModel)]="cliente.color" name="color">
+        </div>
+      </div>
+
+      <!-- -->
+      <div class="form-group row">
+        <label for="asigna" class="col-form-label col-sm-2">Asignación</label>
+        <div class="col-sm-6">
+          <input type="text" class="form-control" [(ngModel)]="cliente.asigna" name="asigna">
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <div class="col-sm-6">
+          <button name="button" class="btn btn-primary" role="button" (click)='create()' *ngIf="!cliente.id else elseBlock">Crear</button>
+          <ng-template #elseBlock>
+          <button name="button" class="btn btn-primary" role="button" (click)='update()' >Editar</button>
+          </ng-template>
+        </div>
+      </div>
+
+    </form>
+  </div>
+</div>
